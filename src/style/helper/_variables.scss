@@ -5,6 +5,7 @@
   --core-color: rgba(27, 29, 27, 1);
   --bg-color: rgba(32, 35, 33, 1);
   --white-color: rgba(247, 251, 251, 1);
+  --grey-color: rgba(163, 165, 163, 1);
   --font-family-base: "Montserrat", sans-serif;
 }
 
@@ -19,7 +20,7 @@
   }
 
   @media screen and (min-width: vars.$breakpoint-desktop) {
-    max-width: 1920px;
+    max-width: 1440px;
     padding: 0 135px;
   }
 }

@@ -1,6 +1,8 @@
 @use "../style/helper/breakpoints" as vars;
 
 .about-us {
+  display: block;
+  margin-inline: auto;
   margin-top: 52px;
 
   @media screen and (min-width: vars.$breakpoint-tablet) {
