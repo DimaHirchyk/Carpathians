@@ -2,8 +2,8 @@
 
 .hero {
   background-image: image-set(
-    url(../../public/hero/hero_mob_min.jpg) 1x,
-    url(../../public/hero/hero_mob.jpg) 2x
+    url(../public/hero/hero_mob_min.webp) 1x,
+    url(../public/hero/hero_mob.webp) 2x
   );
   background-repeat: no-repeat;
   background-position: center;
@@ -17,8 +17,8 @@
 
   @media screen and (min-width: vars.$breakpoint-tablet) {
     background-image: image-set(
-      url(../../public/hero/hero_tab_min.jpg) 1x,
-      url(../../public/hero/hero_tab.jpg) 2x
+      url(../public/hero/hero_tab_min.webp) 1x,
+      url(../public/hero/hero_tab.webp) 2x
     );
     padding-top: 180px;
     padding-bottom: 185px;
@@ -27,8 +27,8 @@
 
   @media screen and (min-width: vars.$breakpoint-desktop) {
     background-image: image-set(
-      url(../../public/hero/hero_desk_min.jpg) 1x,
-      url(../../public/hero/hero_desk.jpg) 2x
+      url(../public/hero/hero_desk_min.webp) 1x,
+      url(../public/hero/hero_desk.webp) 2x
     );
     padding-top: 280px;
     padding-bottom: 293px;
@@ -88,8 +88,13 @@
   height: 52px;
   padding: 15px 0;
   background-color: var(--blue-color);
-  color: var(--white-color);
+  color: var(--hover-btn-text);
   font-weight: 500;
+  transition: background-color 250ms ease-in-out allow-discrete;
+
+  &:hover {
+    background-color: var(--hover-btn);
+  }
 
   @media screen and (min-width: vars.$breakpoint-tablet) {
     width: 394px;
@@ -126,5 +131,11 @@
   align-items: center;
 }
 .contact-icon {
+  fill: var(--blue-color);
   width: 40px;
+  transition: fill 250ms ease-in-out;
+
+  &:hover {
+    fill: var(--white-color);
+  }
 }

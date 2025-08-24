@@ -102,6 +102,11 @@
   color: var(--white-color);
   display: block;
   margin-inline: auto;
+  transition: background-color 250ms ease-in-outw;
+
+  &:hover {
+    background-color: var(--hover-btn);
+  }
 
   @media screen and (min-width: vars.$breakpoint-tablet) {
     width: 312px;

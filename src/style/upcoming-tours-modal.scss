@@ -1,0 +1,76 @@
+.tours-modal {
+  background-image: image-set(
+    url(../public/tours/for_modal/x1/hoverlaMob.webp) 1x,
+    url(../public/tours/for_modal/x2/hoverlaMob.webp) 2x
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 480px;
+  width: 100vw;
+}
+
+.modal-tours-content {
+  color: var(--white-color);
+  position: relative;
+  padding-top: 56px;
+  padding-inline: 48px;
+}
+.tours-close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  fill: var(--white-color);
+  border: none;
+  background: none;
+}
+.tour-title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.numDay {
+  display: block;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: var(--blue-color);
+  height: 48px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.tours-modal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.tours-modal-item {
+}
+.modal-tours-name {
+}
+.price-block {
+  padding: 28px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.price-tour {
+  font-weight: 600;
+  text-align: center;
+}
+.buy-tour {
+  border: none;
+  outline: none;
+  width: 258px;
+  padding: 16px 70px;
+  background: var(--blue-color);
+  color: var(--white-color);
+  margin-inline: auto;
+
+  &:hover {
+    background-color: var(--hover-btn);
+  }
+}

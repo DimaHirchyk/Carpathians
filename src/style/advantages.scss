@@ -67,8 +67,8 @@
   right: -2px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2)),
     image-set(
-      url(../../public/advantages/Advantages_mob_x1-min.jpg) 1x,
-      url(../../public/advantages/Advantages_mob_x2-min.jpg) 2x
+      url(../public/advantages/Advantages_mob_x1-min.webp) 1x,
+      url(../public/advantages/Advantages_mob_x2-min.webp) 2x
     );
 
   @media screen and (min-width: vars.$breakpoint-tablet) {
@@ -90,8 +90,8 @@
     left: 0px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2)),
       image-set(
-        url(../../public/advantages/Advantages_tab-1x-min.jpg) 1x,
-        url(../../public/advantages/Advantages_tab-2x-min.jpg) 2x
+        url(../public/advantages/Advantages_tab-1x-min.webp) 1x,
+        url(../public/advantages/Advantages_tab-2x-min.webp) 2x
       );
   }
 
@@ -110,8 +110,8 @@
     left: 398px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2)),
       image-set(
-        url(../../public/advantages/Advantages_desc_1x-min.jpg) 1x,
-        url(../../public/advantages/Advantages_desc_2x-min.jpg) 2x
+        url(../public/advantages/Advantages_desc_1x-min.webp) 1x,
+        url(../public/advantages/Advantages_desc_2x-min.webp) 2x
       );
   }
 }
