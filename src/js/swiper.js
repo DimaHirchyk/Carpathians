@@ -55,3 +55,11 @@ const swiperTours = new Swiper(".swiper-tour", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+const modalToursSwiper = new Swiper(".modalSwiper", {
+  wrapperClass: "modalSwiperWraper",
+  slideClass: "modalSwiperSlide",
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
