@@ -29,15 +29,16 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-close-hero {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
   background-color: transparent;
   border: none;
   display: flex;
   align-items: center;
 }
 .icone-close-btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
   fill: var(--bg-color); /* Тепер іконка буде цього кольору */
 }
 .title-modal-hero {
@@ -112,4 +113,8 @@
   border: none;
   background-color: var(--blue-color);
   color: var(--white-color);
+
+  &:hover {
+    background-color: var(--hover-btn);
+  }
 }

@@ -27,13 +27,15 @@
     margin-bottom: 60px;
   }
 }
+
+.swiper-tour {
+  overflow: hidden;
+}
+
 .list-upcoming {
   display: flex;
   flex-direction: row;
-  gap: 15px;
-  overflow-x: scroll;
   scroll-snap-type: x mandatory; //доводка скролу
-  margin: 0px -1px;
   margin-bottom: 24px;
 
   &::-webkit-scrollbar {
@@ -41,8 +43,6 @@
   }
 
   @media screen and (min-width: vars.$breakpoint-tablet) {
-    gap: 20px;
-    margin: 0px -2px;
     margin-bottom: 32px;
   }
 }
@@ -50,6 +50,7 @@
   flex: 0 0 100%;
   scroll-snap-align: start;
   border: 1px solid var(--blue-color);
+  border-top: none;
 
   @media screen and (min-width: vars.$breakpoint-tablet) {
     flex: 0 0 calc((100% - 20px) / 2);
@@ -123,11 +124,11 @@
 .btn-pag {
   background-color: transparent;
   border: none;
-
-  &:disabled .icon-pag {
-    stroke: var(--grey-color);
-  }
 }
 .icon-pag {
-  stroke: var(--blue-color);
+  fill: var(--blue-color);
+}
+
+.btn-pag.swiper-button-disabled .icon-pag {
+  fill: var(--grey-color);
 }

@@ -27,14 +27,6 @@
   }
 }
 
-.modal-burger.is-open ~ .hero-container {
-  display: none;
-}
-
-body.has-modal-open .hero-container {
-  display: none;
-}
-
 .modal__overley {
   position: absolute;
   top: 0;

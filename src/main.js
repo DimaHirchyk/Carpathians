@@ -1,2 +1,3 @@
-import "./js/modal-burger";
+import "./js/modal";
 import "./js/rewiev";
+import "./js/swiper";

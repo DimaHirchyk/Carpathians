@@ -29,10 +29,7 @@
 .list-gallery {
   display: flex;
   flex-direction: row;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
   margin-bottom: 24px;
-  gap: 20px;
 
   &::-webkit-scrollbar {
     display: none; // Для Chrome, Safari, Opera
@@ -50,7 +47,7 @@
   flex: 0 0 auto;
 }
 .img-galery {
-  width: 280px;
+  width: auto;
   height: 480px;
   object-fit: cover;
 
@@ -73,11 +70,13 @@
 .btn-pagination-gallery {
   background-color: transparent;
   border: none;
-
-  &:disabled .icon-gallery {
-    stroke: var(--grey-color);
-  }
 }
+/* активна кнопка — синя іконка */
 .icon-gallery {
-  stroke: var(--blue-color);
+  fill: var(--blue-color);
+}
+
+/* неактивна кнопка — сіренька іконка */
+.btn-pagination-gallery.swiper-button-disabled .icon-gallery {
+  fill: var(--grey-color);
 }
