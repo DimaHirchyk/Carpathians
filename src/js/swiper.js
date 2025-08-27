@@ -1,6 +1,6 @@
 import Swiper from "swiper";
 import "swiper/css";
-import { Autoplay, Navigation } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 const swiperGallery = new Swiper(".swiper", {
   modules: [Navigation, Autoplay],
@@ -32,6 +32,9 @@ const swiperGallery = new Swiper(".swiper", {
 const swiperTours = new Swiper(".swiper-tour", {
   modules: [Navigation],
   speed: 1000,
+  resistanceRatio: 0,
+  watchOverflow: true,
+
   wrapperClass: "list-upcoming",
   slideClass: "iteam-upcoming",
   breakpoints: {
@@ -56,10 +59,19 @@ const swiperTours = new Swiper(".swiper-tour", {
   },
 });
 
-const modalToursSwiper = new Swiper(".modalSwiper", {
-  wrapperClass: "modalSwiperWraper",
-  slideClass: "modalSwiperSlide",
-  pagination: {
-    el: ".swiper-pagination",
-  },
-});
+// const modalToursSwiper = new Swiper(".modalSwiper", {
+//   modules: [Pagination],
+//   speed: 1000,
+//   slidesPerView: 1,
+
+//   wrapperClass: "modalSwiperWraper",
+//   slideClass: "tour-block",
+//   pagination: {
+//     renderBullet: function (_, className) {
+//       return '<span class="' + className + '">' + "</span>";
+//     },
+//     el: ".swiperPagination",
+//     type: "bullets",
+//     clickable: true,
+//   },
+// });
