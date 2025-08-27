@@ -33,13 +33,17 @@
   height: auto;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 90vw;
+  height: 90vw;
   max-width: 615px;
+  max-height: 625px;
 
   @media screen and (min-width: vars.$breakpoint-tablet) {
+    max-height: 735px;
     max-width: 900px;
   }
 
   @media screen and (min-width: vars.$breakpoint-desktop) {
+    max-height: 975px;
     max-width: 1300px;
   }
 }
