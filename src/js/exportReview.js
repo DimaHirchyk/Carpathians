@@ -9,6 +9,7 @@ export const items = [
     backFotoX1: "/reviews/rotate_x1/Anita.webp",
     backFotoX2: "/reviews/rotate_x2/Anita.webp 2x",
     backFotoAlt: "Maria",
+    delay: "200",
   },
   {
     usetFotoX1: "/reviews/Ostap-min.webp",
@@ -20,6 +21,7 @@ export const items = [
     backFotoX1: "/reviews/rotate_x1/Ostap.webp",
     backFotoX2: "/reviews/rotate_x2/Ostap.webp 2x",
     backFotoAlt: "Ostap",
+    delay: "400",
   },
   {
     usetFotoX1: "/reviews/Anita-min.webp",
@@ -31,5 +33,6 @@ export const items = [
     backFotoX1: "/reviews/rotate_x1/Maria.webp",
     backFotoX2: "/reviews/rotate_x2/Maria.webp 2x",
     backFotoAlt: "Anita",
+    delay: "600",
   },
 ];

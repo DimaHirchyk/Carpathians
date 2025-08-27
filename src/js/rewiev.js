@@ -13,7 +13,8 @@ const createLi = items
       backFotoX1,
       backFotoX2,
       backFotoAlt,
-    }) => `<li class="iteam-review">
+      delay,
+    }) => `<li class="iteam-review" data-aos="zoom-in-up" data-aos-delay="${delay}">
         <div class="card">
           <div class="content">
             <div class="front">
@@ -51,3 +52,5 @@ const createLi = items
   .join("");
 
 list.insertAdjacentHTML("beforeend", createLi);
+
+//
